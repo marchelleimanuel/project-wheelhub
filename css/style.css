@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(249, 249, 249);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4rem;
+    padding: 0 6.35rem 0 4rem;
+    box-shadow: 0 -12px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* border: 1px solid; */
+}
+
+.nav-container .brand {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+}
+
+.dropdown:hover .dropdown-items{
+    display: block;
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 1.3rem 3rem;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown .dropdown-logo {
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+}
+
+.dropdown .dropdown-items{
+    border: 1px solid rgba(71, 71, 71, 0.2);
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+}
+
+.dropdown .dropdown-items a{
+    padding: .8rem 0 .8rem 1rem;
+    text-align: left;
+}
+
+.dropdown .dropdown-items a:hover{
+    background-color: rgba(171, 171, 171, 0.2);
+}
+
+.dropdown .dropdown-items a#sign-up{
+    color: rgb(216, 3, 3);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+}
+
+
+footer {
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 179, 179);
+}
+
+footer .copyright {
+    background-color: inherit;
+}
+
+@media screen and (width < 900px) {
+    .nav-container {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+@media screen and (width < 768px) {
+    .dropdown a {
+        display: none;
+    }
+
+    .dropdown .dropdown-items.active{
+        display: block;
+        width: 100%;
+        /* min-height: 200px; */
+    }
+
+    
+    .dropdown .dropdown-items a{
+        display: block;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        -webkit-transform: translateY(8px) rotate(45deg);
+        -moz-transform: translateY(8px) rotate(45deg);
+        -ms-transform: translateY(8px) rotate(45deg);
+        -o-transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        -moz-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+        -o-transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+@media screen and (width < 700px) {
+    .nav-container .brand {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media screen and (width < 600px) {
+    .nav-container .brand {
+        font-size: 1.4rem;
+    }
+}
+
+

@@ -1,0 +1,305 @@
+section {
+    max-width: 100%;
+}
+
+.story-container {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.story-container .story-text {
+    margin-right: 5rem;
+}
+
+.story-container .story-text .story-title {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+.story-container .story-text .story-description {
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.story-container img {
+    width: 60%;
+}
+
+
+.vision-mission{
+    background-color: rgb(237, 237, 237);
+}
+
+.vision-mission-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 4rem;
+    background-color: inherit;
+}
+
+.vision,
+.mission {
+    padding: 1.1rem;
+    margin: 0 2rem;
+    min-height: 400px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.vision h2,
+.mission h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.descriptions {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.activities {
+    padding: 2rem;
+}
+
+.activities h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.activities-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.activities-card-container {
+    width: 440px;
+}
+
+.activities-images {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.activities-images.activities-one {
+    background-image: url(../Assets/about_us/car_engineer.jpeg);
+}
+
+.activities-images.activities-two {
+    background-image: url(../Assets/about_us/people_discussing.jpeg);
+}
+
+.activities-images.activities-three {
+    background-image: url(../Assets/about_us/car_engineer2.webp);
+}
+
+.contact-us{
+    background-color: rgb(237, 237, 237);
+    min-height: 20rem;
+    margin: 4rem 0;
+    padding: 2rem;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    background-color: inherit;
+    margin-bottom: 5rem;
+}
+
+.contact-us-container {
+    max-width: 60%;
+    background-color: inherit;
+    margin: 0 auto;
+    /* text-align: center; */
+    line-height: 2rem;
+}
+
+.contact-us-container span{
+    background-color: inherit;
+    font-weight: bold;
+}
+
+.email, 
+.phonenumber,
+.address {
+    background-color: inherit;
+    font-size: 1.2rem;
+}
+
+
+
+/* breakpoints */
+@media screen and (width < 1715px) {
+    .activities-container {
+        /* border: 1px solid; */
+        max-width: 60%;
+    }
+
+    .activities-card-container {
+        width: 100%;
+        margin: 2rem;
+    }
+}
+
+@media screen and (width < 1300px) {
+    .story-container {
+        /* border: 1px solid; */
+        /* max-width: 80%; */
+    }
+
+    .story-container .story-text {
+        margin-right: 2.5rem
+    }
+
+    .story-container .story-text .story-title {
+        /* font-size: 1.5rem; */
+        font-size: 2rem;
+    }
+
+    .story-container .story-text .story-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (width < 1200px) {
+    .vision-mission-container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (width < 1100px) {
+    .story-container .story-text {
+        margin-right: 0;
+    }
+    
+    .story-container img {
+        display: none;
+    }
+
+    .story-container .story-text .story-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .story-container .story-text .story-description {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media screen and (width < 1000px) {
+    .activities-container {
+        max-width: 80%;
+    }
+}
+
+
+@media screen and (width < 900px) {
+    .vision-mission-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .vision,
+    .mission {
+        min-width: 100%;
+        margin: 2rem;
+    }
+
+    .vision h2,
+    .mission h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (width < 768px) {
+    .story-container {
+        max-width: 90%;
+    }
+
+    .vision-mission-container {
+        padding: 4rem 2rem;
+    }
+
+    .activities-container {
+        max-width: 100%;
+    }
+
+    .contact-us-container {
+        max-width: 80%;
+    }
+
+}
+
+@media screen and (width < 600px) {
+    .activities-card-container {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (width < 500px) {
+    .story-container {
+        max-width: 100%;
+    }
+
+    .vision-mission-container {
+        max-width: 100%;
+        padding: 4rem 2rem;
+    }
+
+    .activities {
+        padding: 2rem 1rem;
+    }
+
+    .contact-us-container {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (width < 400px) {
+    .vision-mission-container {
+        padding: 2rem 1rem;
+    }
+
+    .descriptions {
+        font-size: 1.15rem;
+    }
+
+    .activities {
+        padding: 2rem .7rem;
+    }
+
+}
+
+
+
+
+
+
+
+

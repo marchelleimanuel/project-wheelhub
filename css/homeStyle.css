@@ -1,0 +1,429 @@
+/* home  */
+.hero-image {
+    min-height: calc(100vh - 4rem);
+    background-image: url("../Assets/gallery/gallery_4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 60%;
+    padding: 1rem 2rem;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .hero-description {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 5rem;
+    background-color: transparent;
+    max-width: 60%;
+}
+
+.overlay .hero-description .hero-title {
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.overlay .hero-description .hero-sub-title {
+    margin: 0 0 2rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: rgb(255, 204, 94);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.overlay .hero-description .hero-explanation{
+    color: white;
+}
+
+.overlay .hero-description .hero-title, 
+.overlay .hero-description .hero-sub-title,
+.overlay .hero-description .hero-explanation {
+    background-color: inherit;
+}
+
+
+/* Carousel */
+
+.image-slider .kiri,
+.image-slider .kanan {
+    /* border: 1px solid red; */
+    cursor: pointer;
+    background-image: url('../Assets/ui/down_down_arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.image-slider .kiri {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.image-slider .kanan {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+
+.section-title {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2.2rem;
+}
+
+.promotion {
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+.image-slider {
+    /* border: 1px solid; */
+    max-width: 80%;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid ; */
+    /* max-width: 60%; */
+    margin: 0 auto;
+    height: 300px;
+}
+
+.carousel {
+    overflow: hidden;
+    margin: 0 1rem;
+    width: 700px;
+    min-height: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.carousel-image-container {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    min-height: 100%;
+    /* border: 1px solid red; */
+} 
+
+.carousel-image-container .carousel-image {
+    max-width: 100%;
+    /* max-height: 100%; */
+    display: block;
+}
+
+.carousel-image:hover {
+    cursor: pointer;
+}
+
+/* Featured cars */
+
+.car-container {
+    max-width: 80%;
+    /* border: 1px solid; */
+}
+
+.car-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 4rem;
+    /* border: 1px solid red; */
+}
+
+.car-container-header a {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    /* border: 1px solid salmon; */
+}
+
+.car-card {
+    display: inline-block;
+    padding: 1rem .5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    margin: 1rem 1rem 2rem;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+.car-card .car-name {
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.car-image {
+    width: 290px;
+    height: 190px;
+    box-shadow: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+.car-image.mirai {
+    background-image: url("../Assets/product_card/2023_Mirai.jpeg")
+}
+
+.car-image.gr-corolla {
+    background-image: url("../Assets/product_card/2024_GR_Corolla.jpeg");
+}
+
+.car-image.grand-highlander {
+    background-image: url("../Assets/product_card/2024_grand_highlander.jpeg");
+}
+
+.car-image.land-cruiser {
+    background-image: url("../Assets/product_card/2024_land_cruiser.jpeg");
+}
+
+.car-image.prius-prime {
+    background-image: url("../Assets/product_card/2024_prius_prime.jpeg");
+}
+
+.car-image.rav4 {
+    background-image: url("../Assets/product_card/2024_rav4.jpeg");
+}
+
+.car-image.venza {
+    background-image: url("../Assets/product_card/2024_venza.jpeg");
+}
+
+.car-image.camry {
+    background-image: url("../Assets/product_card/2025_camry.jpeg");
+}
+
+.car-card:hover {
+    transform: scale(1.020);
+    -webkit-transform: scale(1.020);
+    -moz-transform: scale(1.020);
+    -ms-transform: scale(1.020);
+    -o-transform: scale(1.020);
+    cursor: pointer;
+}
+
+
+
+/* Breakpoints */
+
+@media screen and (width < 1200px) {
+    .overlay .hero-description {
+        max-width: 90%;
+    }
+
+    .image-slider {
+        max-width: 90%;
+    }
+
+}
+
+@media screen and (width < 1000px) {
+    .overlay .hero-description {
+        padding: 3rem;
+    }
+
+    .overlay .hero-description .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .overlay .hero-description .hero-sub-title {
+        font-size: 3.5rem;
+    }
+
+    .car-container-header {
+        max-width: 100%;
+    }
+
+    .car-container-header .featured-cars {
+        font-size: 1.8rem;
+    }
+
+    .car-container-header a {
+        font-size: 1rem;
+    }
+
+    .car-container {
+        padding: 1rem;
+        max-width: 85%;
+    }
+
+    .car-card .car-name {
+        margin-bottom: 4px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .car-image {
+        width: 250px;
+        height: 150px;
+    }
+
+    /* .carousel {
+        width: 600px;
+    } */
+}
+
+@media screen and (width < 768px) {
+    .overlay .hero-description .hero-title {
+        font-size: 1.2rem;
+    }
+
+    .overlay .hero-description .hero-sub-title {
+        font-size: 3rem;
+    }
+
+    .overlay .hero-description .hero-explanation {
+        font-size: 1rem;
+    }
+
+    .car-container {
+        padding: 1rem;
+        max-width: 70%;
+    }
+    
+    .car-card {
+        min-width: 70%;
+    }
+
+    .car-card .car-image {
+        width: 100%;
+    }
+
+    .carousel-container {
+        height: 200px;
+    }
+
+    .promotion {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (width < 600px) {
+    .car-card {
+        min-width: 90%;
+    }
+
+    .car-card .car-image {
+        width: 100%;
+    }
+
+    .car-container-header {
+        padding: 0 1rem
+    }
+
+    .car-container-header .featured-cars {
+        font-size: 1.5rem;
+    }
+
+    .car-container-header a {
+        font-size: 1rem;
+    }
+
+    .image-slider {
+        max-width: 100%;
+    }
+
+    .image-slider .kiri,
+    .image-slider .kanan {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-container {
+        height: 200px;
+    }
+
+    .promotion {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (width < 500px) {
+    .overlay .hero-description {
+        max-width: 100%;
+    }
+
+    .overlay .hero-description {
+        padding: 1.25rem;
+    }
+
+    .overlay .hero-description .hero-title {
+        font-size: 1.1rem;
+    }
+
+    .overlay .hero-description .hero-sub-title {
+        font-size: 2.7rem;
+    }
+
+    .overlay .hero-description .hero-explanation {
+        font-size: .9rem;
+    }
+
+    .car-container {
+        max-width: 100%;
+    }
+
+    .car-container-header {
+        padding: 0 1rem;
+    }
+
+    .image-slider {
+        padding: .3rem;
+    }
+
+    .image-slider .kiri,
+    .image-slider .kanan {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registerStyle.css">
+    <title>Wheel Hub</title>
+</head>
+<body>
+    <form method="post" class="form-container">
+        <h2>Registration</h2>
+
+        <label class="labels" for="username">Username</label> 
+        <input type="text" name="username" id="username" placeholder="Enter your username"> 
+        <br><br>
+
+        <label class="labels" for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <br><br>
+        
+        <label class="labels" for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <br><br>
+
+        <label class="labels" for="confPassword">Confirm Password</label>
+        <input type="password" name="confPassword" id="confPassword" placeholder="Confirm your password">
+        <br><br>
+
+        <label class="labels">Gender</label>
+        <input type="radio" name="gender" id="gender-male">
+        <label class="gender" for="gender-male">Male</label>
+
+        <input type="radio" name="gender" id="gender-female">
+        <label class="gender" for="gender-female">Female</label>
+        <br><br>
+
+        <label class="labels" for="dob">Date Of Birth</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement">I agree with terms and conditions</label>
+        <br><br>
+
+        <button type="button" id="submit-btn">Submit</button>
+    </form>
+<script src="../js/registration.js"></script>
+</body>
+</html>
