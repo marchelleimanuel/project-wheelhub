@@ -15,5 +15,5 @@ Wheel Hub is a user-friendly website designed to showcasing a featured cars. It 
 ```
 
 ## Demo 
-Check out the demo video of Shoeshine: 
+Check out the demo video of Wheel Hub: 
 
