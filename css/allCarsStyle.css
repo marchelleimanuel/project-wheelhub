@@ -126,3 +126,20 @@
     -o-transform: scale(1.020);
     cursor: pointer;
 }
+
+@media screen and (width < 768px) {
+    .car-card {
+        width: 100%;
+    }
+
+    .car-image {
+        width: 100%;
+    }
+}
+
+@media screen and (width < 500px) {
+    .car-container {
+        padding: 4rem 0;
+    }
+}
+
